@@ -4,9 +4,25 @@
         <servlet-name>AnotherServlet</servlet-name>
         <servlet-class>Server.AnotherServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Servletno987</servlet-name>
+        <servlet-class>Server.Servletno987</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Accueil</servlet-name>
+        <servlet-class>Server.Accueil</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AnotherServlet</servlet-name>
         <url-pattern>/AnotherServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servletno987</servlet-name>
+        <url-pattern>/Servletno987</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Accueil</servlet-name>
+        <url-pattern>/Accueil</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -6,7 +6,44 @@ and open the template in the editor.
 -->
 <html>
   <head>
-    <!--Load the AJAX API-->
+      <script type="text/javascript" src="JS/CestDuJS.js"></script>
+      <meta charset="utf-8" />
+      <title>Coucou</title>
+  </head>
+
+  <body>
+      <style type="text/css">
+  div { width: 400px; height: 300px; float: left; margin: 5px; }
+  #premier { background-color: #F6E497; }
+  #troisieme { background-color: #CAF1EC; }
+  #quatrieme { background-color: #F1DBCA; }
+</style>
+
+<button id="majPremier">Mise à jour première zone</button></br></br>
+<div id="premier">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</div>
+
+<div id="troisieme">
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+
+<div id="quatrieme">
+  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+</div>
+
+<script src="jquery.js"></script>
+<script>
+  $(function() {
+    $('#majPremier').click(function() {
+      $('#premier').load('maj1.html', function() {
+        alert('La première zone a été mise à jour');
+      });
+    });
+  });
+</script>
+
+      <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
 
@@ -43,9 +80,17 @@ and open the template in the editor.
         chart.draw(data, options);
       }
     </script>
-  </head>
+    <script>
+    var obj = {
+        index: 'contenu'},string;
+    
+    string = JSON.stringify(obj);
+    alert(typeof string + ' : ' + string); // Affiche : « string : {"index":"contenu"} »
 
-  <body>
+    obj = JSON.parse(string);
+    alert(typeof obj + ' : ' + obj);    
+  
+    </script>
     <!--Div that will hold the pie chart-->
     <div id="chart_div"></div>
   </body>

@@ -17,7 +17,8 @@
             <% 
             String attribut = (String) request.getAttribute("test");
             out.println(attribut);
-            out.println("ok");
+            String test = ("test");
+            out.println(test);
             String parametre = request.getParameter( "auteur" );
             out.println( parametre );
             %>

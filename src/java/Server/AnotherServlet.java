@@ -66,11 +66,10 @@ public class AnotherServlet extends HttpServlet {
     @Override
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
         processRequest(request, response);
-        
-	String paramAuteur = request.getParameter( "auteur" );
-	String message = "Transmission de variables : OK ! ";
+	String message = "Transmission de variables";
 	request.setAttribute( "test", message );
 	this.getServletContext().getRequestDispatcher( "/WEB-INF/test.jsp" ).forward( request, response );
+	
         
         
 }
@@ -87,6 +86,7 @@ public class AnotherServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+        
     }
 
     /**
