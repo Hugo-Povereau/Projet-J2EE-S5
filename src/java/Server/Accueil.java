@@ -47,7 +47,7 @@ public class Accueil extends HttpServlet {
             out.println("<body>");
             out.println("  <style >\n" +
 "      html{\n" +
-"        background:radial-gradient(#D7300C, #A6270B);\n" +
+"        background:radial-gradient(#91dbca, #d8e8a0);\n" +
 "        background-repeat: no-repeat;\n" +
 "        height:100%;\n" +
 "      }\n" +
@@ -55,34 +55,62 @@ public class Accueil extends HttpServlet {
 "\n" +
 "\n" +
 "      #image{\n" +
+"        background-color:#454545;\n" +                    
 "        position:absolute;\n" +
-"        top:50%;\n" +
+"        vertical-align: top;\n" +    
+"        width:40%;\n" +            
+"        top:30%;\n" +
 "        left:50%;\n" +
-"         transform: translate(-50%, -50%);\n" +
+"        transform: translate(-50%, -50%);\n" +
 "\n" +
 "      }\n" +
 "      p{\n" +
 "        position:absolute;\n" +
-"        top:25%;\n" +
-"        left:40%;\n" +
+"        top:60%;\n" +
+"        left:45%;\n" +
 "        font-size:1.5em;\n" +
 "      }\n" +
 "\n" +
 "      #image_1{\n" +
 "      background-color:#289C3B;\n" +
-"      margin-left:50px;\n" +
+"      margin-left:10px;\n" +
 "      }\n" +
 "\n" +
 "      #image_2{\n" +
-"      margin-left:50px;\n" +
+"      margin-left:10px;\n" +
 "      background-color:#1C5684;\n" +
 "      }\n" +
 "\n" +
 "      #image_3{\n" +
-"        margin-left:50px;\n" +
+"        margin-left:10px;\n" +
 "      background-color:#484158;\n" +
 "      }\n" +
 "\n" +
+"      #image_4{\n" +
+"        margin-left:10px;\n" +
+"      background-color:#484158;\n" +
+"      }\n" +
+"\n" +
+"      #image_5{\n" +
+"      background-color:#289C3B;\n" +
+"      margin-left:10px;\n" +
+"      }\n" +
+"\n" +
+"      #image_6{\n" +
+"      margin-left:10px;\n" +
+"      background-color:#1C5684;\n" +
+"      }\n" +
+"\n" +
+"      #image_7{\n" +
+"        margin-left:10px;\n" +
+"      background-color:#484158;\n" +
+"      }\n" +
+"\n" +
+"      #image_8{\n" +
+"        margin-left:10px;\n" +
+"      background-color:#484158;\n" +
+"      }\n" +
+"\n" +                    
 "      .navbar .dropdown-toggle, .navbar .dropdown-menu a {\n" +
 "          cursor: pointer;\n" +
 "      }\n" +
@@ -116,49 +144,6 @@ public class Accueil extends HttpServlet {
 "    </style>");
             out.println("<script src=\"http://code.jquery.com/jquery.js\"></script>");
             out.println("<script>\n" +
-"      $(document).ready(function(){\n" +
-"      var temps=0;\n" +
-"      var temps_2=0\n" +
-"\n" +
-"      $(\"#bonne_image\").on(\"click\",function(){\n" +
-"        if (temps==0){\n" +
-"          $(\"#bonne_image\").attr('src','images/bleu_human.png');\n" +
-"\n" +
-"          temps=1;\n" +
-"        }\n" +
-"\n" +
-"        else {\n" +
-"          $(\"#bonne_image\").attr('src','images/human.png');\n" +
-"          temps=0;\n" +
-"        }\n" +
-"\n" +
-"\n" +
-"        });\n" +
-"\n" +
-"        $(\"#cherche_bon_mot\").on(\"click\",function(){\n" +
-"          var resultat=$(\"#ecrit\").val();\n" +
-"\n" +
-"          if (resultat==\"pyramide\"){\n" +
-"\n" +
-"            $(\"#troisieme\").attr('src','images/bleu_pyramide.png');\n" +
-"\n" +
-"          }\n" +
-"\n" +
-"\n" +
-"\n" +
-"          });\n" +
-"          $(\"#bonne_reponse\").on(\"click\",function(){\n" +
-"            if (temps_2==0){\n" +
-"              $(\"#seconde_img\").attr('src','images/bleunormal.png');\n" +
-"\n" +
-"              temps_2=1;\n" +
-"            }\n" +
-"\n" +
-"            else {\n" +
-"              $(\"#seconde_img\").attr('src','images/loupe.png');\n" +
-"              temps_2=0;\n" +
-"            }\n" +
-"\n" +
 "\n" +
 "            });\n" +
 "\n" +
@@ -199,9 +184,9 @@ public class Accueil extends HttpServlet {
 "        <ul class=\"navbar-nav mr-auto\">\n" +
 "\n" +
 "            <li class=\"nav-item dropdown\">\n" +
-"                <a class=\"nav-link dropdown-toggle\" id=\"dropdown1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Slide 1</a>\n" +
+"                <a class=\"nav-link dropdown-toggle\" id=\"dropdown1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">on teste la longueur maximal possible pour un titre</a>\n" +
 "                <ul class=\"dropdown-menu\" aria-labelledby=\"dropdown1\">\n" +
-"                    <li class=\"dropdown-item\"> <a href=\"AnotherServlet\" >Lien n°1</a></li>\n" +
+"                    <li class=\"dropdown-item\"> <a href=\"AnotherServlet\" >on teste la longueur maximal possible pour un titre</a></li>\n" +
 "                    <li class=\"dropdown-item dropdown\">\n" +
 "                        <a class=\"dropdown-toggle\" id=\"dropdown1-1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Peut-être</a>\n" +
 "                        <ul class=\"dropdown-menu\" aria-labelledby=\"dropdown1-1\">\n" +
@@ -260,43 +245,119 @@ public class Accueil extends HttpServlet {
 "\n" +
 "  		</header>");
             out.println("<div id = \"image\" class=\"row\" >\n" +
-"      <div id=#image_1 class=\"col-md-4 col-lg-4\">\n" +
+"      <div id=#image_1 class=\"col-md-3 col-lg-3\">\n" +
 "        <div class=\"portfolio-item mx-auto\" data-toggle=\"modal\" data-target=\"#portfolioModal1\">\n" +
 "          <div class=\"portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100\">\n" +
 "            <div class=\"portfolio-item-caption-content text-center text-white\">\n" +
 "              <i class=\"fas fa-plus fa-3x\"></i>\n" +
 "            </div>\n" +
 "          </div>\n" +
-"          <img id = \"bonne_image\" class=\"img-fluid\" src=\"images/human.png\" alt=\"\">\n" +
+"           <a href =\"Boisson\" target =\"_self\">\n" +         
+"          <img id = \"premier\" class=\"img-fluid\" src=\"images/Boisson.png\"  title=\"Boissons, cafés, thés, bières\" onmouseover=\"this.width=this.width-5\" onmouseout=\"this.width=this.width+5\" alt=\"\">\n" +
+"          </a>\n" +
 "        </div>\n" +
 "      </div>\n" +
 "\n" +
 "      <!-- Portfolio Item 2 -->\n" +
-"      <div id=#image_2  class=\"col-md-4 col-lg-4\">\n" +
+"      <div id=#image_2  class=\"col-md-3 col-lg-3\">\n" +
 "        <div class=\"portfolio-item mx-auto\" data-toggle=\"modal\" data-target=\"#portfolioModal2\">\n" +
 "          <div class=\"portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100\">\n" +
 "            <div class=\"portfolio-item-caption-content text-center text-white\">\n" +
 "              <i class=\"fas fa-plus fa-3x\"></i>\n" +
 "            </div>\n" +
 "          </div>\n" +
-"          <img id=\"seconde_img\" class=\"img-fluid\" src=\"images/loupe.png\" alt=\"\">\n" +
+"          <a href =\"Assaisonnement\" target =\"_self\">\n" +
+"          <img id=\"second\" class=\"img-fluid\" src=\"images/Assaisonnement.png\"  title=\"Sauces, assaisonnements et épices\" onmouseover=\"this.width=this.width-5\" onmouseout=\"this.width=this.width+5\" alt=\"\">\n" +
+"          </a>\n" +
 "        </div>\n" +
 "      </div>\n" +
 "\n" +
 "      <!-- Portfolio Item 3 -->\n" +
-"      <div id=#image_3  class=\"col-md-4 col-lg-4\">\n" +
+"      <div id=#image_3  class=\"col-md-3 col-lg-3\">\n" +
 "        <div class=\"portfolio-item mx-auto\" data-toggle=\"modal\" data-target=\"#portfolioModal3\">\n" +
 "          <div class=\"portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100\">\n" +
 "            <div class=\"portfolio-item-caption-content text-center text-white\">\n" +
 "              <i class=\"fas fa-plus fa-3x\"></i>\n" +
 "            </div>\n" +
 "          </div>\n" +
-"          <img id=\"troisieme\" class=\"img-fluid\" src=\"images/pyramide.png\" alt=\"\">\n" +
+"          <a href =\"Dessert\" target =\"_self\">\n" +                    
+"          <img id=\"troisieme\" class=\"img-fluid\" src=\"images/Dessert.png\"  title=\"Desserts et friandises\" onmouseover=\"this.width=this.width-5\" onmouseout=\"this.width=this.width+5\" alt=\"\">\n" +
+"          </a>\n" +
 "        </div>\n" +
 "      </div>\n" +
 "\n" +
+"      <!-- Portfolio Item 4 -->\n" +
+"      <div id=#image_4  class=\"col-md-3 col-lg-3\">\n" +
+"        <div class=\"portfolio-item mx-auto\" data-toggle=\"modal\" data-target=\"#portfolioModal4\">\n" +
+"          <div class=\"portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100\">\n" +
+"            <div class=\"portfolio-item-caption-content text-center text-white\">\n" +
+"              <i class=\"fas fa-plus fa-3x\"></i>\n" +
+"            </div>\n" +
+"          </div>\n" +
+"          <a href =\"Fromage\" target =\"_self\">\n" +   
+"          <img id=\"quatrieme\" class=\"img-fluid\" src=\"images/Fromage.png\"  title=\"Fromages\" onmouseover=\"this.width=this.width-5\" onmouseout=\"this.width=this.width+5\" alt=\"\">\n" +
+"          </a>\n" +
+"        </div>\n" +
+"      </div>\n" +
+"\n" +
+"      <!-- Portfolio Item 5 -->\n" +
+"      <div id=#image_5  class=\"col-md-3 col-lg-3\">\n" +
+"        <div class=\"portfolio-item mx-auto\" data-toggle=\"modal\" data-target=\"#portfolioModal5\">\n" +
+"          <div class=\"portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100\">\n" +
+"            <div class=\"portfolio-item-caption-content text-center text-white\">\n" +
+"              <i class=\"fas fa-plus fa-3x\"></i>\n" +
+"            </div>\n" +
+"          </div>\n" +
+"          <a href =\"Biscuit\" target =\"_self\">\n" +   
+"          <img id=\"cinquieme\" class=\"img-fluid\" src=\"images/Biscuit.png\"  title=\"Pain, biscuit, pâtes et céréales\" onmouseover=\"this.width=this.width-5\" onmouseout=\"this.width=this.width+5\" alt=\"\">\n" +
+"          </a>\n" +
+"        </div>\n" +
+"      </div>\n" +
+"\n" +
+"      <!-- Portfolio Item 6 -->\n" +
+"      <div id=#image_6  class=\"col-md-3 col-lg-3\">\n" +
+"        <div class=\"portfolio-item mx-auto\" data-toggle=\"modal\" data-target=\"#portfolioModal6\">\n" +
+"          <div class=\"portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100\">\n" +
+"            <div class=\"portfolio-item-caption-content text-center text-white\">\n" +
+"              <i class=\"fas fa-plus fa-3x\"></i>\n" +
+"            </div>\n" +
+"          </div>\n" +
+"          <a href =\"Viande\" target =\"_self\">\n" + 
+"          <img id=\"sixieme\" class=\"img-fluid\" src=\"images/Viande.png\"  title=\"Viandes Préparées\" onmouseover=\"this.width=this.width-5\" onmouseout=\"this.width=this.width+5\" alt=\"\">\n" +
+"          </a>\n" +
+"        </div>\n" +
+"      </div>\n" +
+"\n" +
+"      <!-- Portfolio Item 7 -->\n" +
+"      <div id=#image_7  class=\"col-md-3 col-lg-3\">\n" +
+"        <div class=\"portfolio-item mx-auto\" data-toggle=\"modal\" data-target=\"#portfolioModal7\">\n" +
+"          <div class=\"portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100\">\n" +
+"            <div class=\"portfolio-item-caption-content text-center text-white\">\n" +
+"              <i class=\"fas fa-plus fa-3x\"></i>\n" +
+"            </div>\n" +
+"          </div>\n" +
+"          <a href =\"Raisin\" target =\"_self\">\n" + 
+"          <img id=\"septieme\" class=\"img-fluid\" src=\"images/Raisin.png\"  title=\"Fruits secs, raisins, autres\" onmouseover=\"this.width=this.width-5\" onmouseout=\"this.width=this.width+5\" alt=\"\">\n" +
+"          </a>\n" +
+"        </div>\n" +
+"      </div>\n" +
+"\n" +
+"      <!-- Portfolio Item 8 -->\n" +
+"      <div id=#image_8  class=\"col-md-3 col-lg-3\">\n" +
+"        <div class=\"portfolio-item mx-auto\" data-toggle=\"modal\" data-target=\"#portfolioModal8\">\n" +
+"          <div class=\"portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100\">\n" +
+"            <div class=\"portfolio-item-caption-content text-center text-white\">\n" +
+"              <i class=\"fas fa-plus fa-3x\"></i>\n" +
+"            </div>\n" +
+"          </div>\n" +
+"          <a href =\"Poisson\" target =\"_self\">\n" + 
+"          <img id=\"huiteme\" class=\"img-fluid\" src=\"images/Poisson.png\" title=\"Poissons, fruits de mer, escargots\" onmouseover=\"this.width=this.width-5\" onmouseout=\"this.width=this.width+5\" alt=\"\">\n" +
+"          </a>\n" +
+"        </div>\n" +
+"      </div>\n" +
+"\n" +                  
 "    </div> ");
-            out.println("<p>Voici la page d'accueil</p>");
+            out.println("<p>Bienvenue</p>");
           
             out.println("</body>");
             out.println("</html>");
