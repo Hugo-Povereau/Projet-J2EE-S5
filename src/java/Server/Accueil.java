@@ -37,7 +37,7 @@ public class Accueil extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>CharadeChampo</title>");
+            out.println("<title>Accueil</title>");
             out.println("<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\" integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">\n" +
 "    <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>\n" +
 "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\n" +
@@ -145,8 +145,6 @@ public class Accueil extends HttpServlet {
             out.println("<script src=\"http://code.jquery.com/jquery.js\"></script>");
             out.println("<script>\n" +
 "\n" +
-"            });\n" +
-"\n" +
 "        $('.navbar .dropdown-item').on('click', function (e) {\n" +
 "       var $el = $(this).children('.dropdown-toggle');\n" +
 "       var $parent = $el.offsetParent(\".dropdown-menu\");\n" +
@@ -172,7 +170,6 @@ public class Accueil extends HttpServlet {
 "       $(this).find('li.dropdown').removeClass('show open');\n" +
 "       $(this).find('ul.dropdown-menu').removeClass('show open');\n" +
 "   });\n" +
-"      });\n" +
 "    </script>");
             out.println(" <header>\n" +
 "      <div class=\"navbar navbar-expand-md navbar-dark bg-dark mb-4\" role=\"navigation\">\n" +
@@ -188,16 +185,7 @@ public class Accueil extends HttpServlet {
 "                <ul class=\"dropdown-menu\" aria-labelledby=\"dropdown1\">\n" +
 "                    <li class=\"dropdown-item\"> <a href=\"AnotherServlet\" >on teste la longueur maximal possible pour un titre</a></li>\n" +
 "                    <li class=\"dropdown-item dropdown\">\n" +
-"                        <a class=\"dropdown-toggle\" id=\"dropdown1-1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Peut-être</a>\n" +
-"                        <ul class=\"dropdown-menu\" aria-labelledby=\"dropdown1-1\">\n" +
-"                            <li class=\"dropdown-item\" href=\"#\"><a>Peut-être</a></li>\n" +
-"                            <li class=\"dropdown-item dropdown\">\n" +
-"                                <a class=\"dropdown-toggle\" id=\"dropdown1-1-1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Peut-être</a>\n" +
-"                                <ul class=\"dropdown-menu\" aria-labelledby=\"dropdown1-1-1\">\n" +
-"                                    <li class=\"dropdown-item\" href=\"#\"><a>Et non cherche dans l'autre</a></li>\n" +
-"                                </ul>\n" +
-"                            </li>\n" +
-"                        </ul>\n" +
+"                        <a class=\"dropdown-toggle\" id=\"dropdown1-1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Peut-être PAS</a>\n" +
 "                    </li>\n" +
 "                </ul>\n" +
 "            </li>\n" +
@@ -207,30 +195,7 @@ public class Accueil extends HttpServlet {
 "                    <li class=\"dropdown-item\" href=\"#\"><a>Pas là</a></li>\n" +
 "                    <li class=\"dropdown-item\" href=\"#\"><a>Pas là  B</a></li>\n" +
 "                    <li class=\"dropdown-item\" href=\"#\"><a>Pas là</a></li>\n" +
-"                    <li class=\"dropdown-item dropdown\">\n" +
-"                        <a class=\"dropdown-toggle\" id=\"dropdown2-1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Peut-être</a>\n" +
-"                        <ul class=\"dropdown-menu\" aria-labelledby=\"dropdown2-1\">\n" +
-"                            <li class=\"dropdown-item\" href=\"#\"><a>Pas là</a></li>\n" +
-"                            <li class=\"dropdown-item\" href=\"#\"><a>Pas là</a></li>\n" +
-"                            <li class=\"dropdown-item\" href=\"#\"><a>Pas là</a></li>\n" +
-"                            <li class=\"dropdown-item dropdown\">\n" +
-"                                <a class=\"dropdown-toggle\" id=\"dropdown2-1-1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Peut-être</a>\n" +
-"                                <ul class=\"dropdown-menu\" aria-labelledby=\"dropdown2-1-1\">\n" +
-"                                    <li class=\"dropdown-item\" href=\"#\"><a>Pas là</a></li>\n" +
-"                                    <li class=\"dropdown-item\" href=\"#\"><a>Pas là</a></li>\n" +
-"                                    <li class=\"dropdown-item\" href=\"#\"><a>Pas là</a></li>\n" +
-"                                </ul>\n" +
-"                            </li>\n" +
-"                            <li class=\"dropdown-item dropdown\">\n" +
-"                                <a class=\"dropdown-toggle\" id=\"dropdown2-1-2\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Peut-être</a>\n" +
-"                                <ul class=\"dropdown-menu\" aria-labelledby=\"dropdown2-1-2\">\n" +
-"                                    <li class=\"dropdown-item\" href=\"#\"><a>Pas là</a></li>\n" +
-"                                    <li id=\"bonne_reponse\" class=\"dropdown-item\" href=\"#\"><a>Clique ici</a></li>\n" +
-"                                    <li class=\"dropdown-item\" href=\"#\"><a>Pas là</a></li>\n" +
-"                                </ul>\n" +
-"                            </li>\n" +
-"                        </ul>\n" +
-"                    </li>\n" +
+"                    <li class=\"dropdown-item dropdown\"></li>\n" +
 "                </ul>\n" +
 "            </li>\n" +
 "        </ul>\n" +
