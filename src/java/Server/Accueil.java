@@ -176,7 +176,7 @@ public class Accueil extends HttpServlet {
 "    </script>");
             out.println(" <header>\n" +
 "      <div class=\"navbar navbar-expand-md navbar-dark bg-dark mb-4\" role=\"navigation\">\n" +
-"    <a class=\"navbar-brand\" href=\"#\">Champo'nigme</a>\n" +
+"    <a class=\"navbar-brand\" href=\"#\">Champo'zin</a>\n" +
 "    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n" +
 "        <span class=\"navbar-toggler-icon\"></span>\n" +
 "    </button>\n" +
