@@ -237,7 +237,7 @@ public class Accueil extends HttpServlet {
 "\n" +
 "    </div>\n" +
 "    <form class=\"form-inline mt-2 mt-md-0\">\n" +
-"        <input id=\"ecrit\" class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"La réponse est sous vos yeux \" aria-label=\"Search\">\n" +
+"        <input id=\"ecrit\" class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Rechercher un produit \" aria-label=\"Search\">\n" +
 "        <button  id= \"cherche_bon_mot\" class=\"btn btn-dark my-2 my-sm-0\" type=\"button\">Search</button>\n" +
 "    </form>\n" +
 "</div>\n" +
