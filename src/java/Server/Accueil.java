@@ -59,7 +59,7 @@ public class Accueil extends HttpServlet {
 "        position:absolute;\n" +
 "        vertical-align: top;\n" +    
 "        width:40%;\n" +            
-"        top:30%;\n" +
+"        top:26%;\n" +
 "        left:50%;\n" +
 "        transform: translate(-50%, -50%);\n" +
 "\n" +
